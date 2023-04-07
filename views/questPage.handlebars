@@ -1,0 +1,57 @@
+<section class="row">
+  
+  <div class="column">
+    
+
+    <form class="new-quest-form">
+      <h1>Create New Quest</h1>
+      <div>
+        <label for="quest-title">Title: </label>
+        <input type="text" id="quest-title" name="quest-title" />
+      </div>
+      <div>
+        <label for="quest-setting">Setting: </label>
+        <input type="text" id="quest-setting" name="quest-setting" />
+      </div>
+      <div>
+        <label for="quest-setting">Challenge: </label>
+        <input type="text" id="quest-challenge" name="quest-challenge" />
+      </div>
+      <div class="description">
+        <label for="quest-text">Description:</label>
+        <div>
+          <textarea id="quest-text" name="quest-text"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
+
+</section>
+
+
+{{#if quests.length}}
+<section>
+  <h1>Quests</h1>
+  <ul>
+    {{#each quests as |quest|}}
+    <card class="quest-card">
+      <li>
+        <h4><span style="color: white;">Quest Title:</span> {{quest.quest_title}}</h4>
+        <h4><span style="color: white;">Quest Setting:</span> {{quest.quest_setting}}</h4>
+        <h4><span style="color: white;">Quest Challenge:</span> {{quest.quest_challenge}}</h4>
+        <h4 style="color:white; margin-top:2%;">Description: </h4>
+        <p>{{quest.quest_text}}</p>
+      </li>
+    </card>
+    {{/each}}
+  </ul>
+
+</section>
+
+{{else}}
+<p>No quests found.</p>
+{{/if}}
+
+
+<script src="/js/questPage.js"></script>

@@ -1,0 +1,30 @@
+[
+    {
+        "quest_title": "Mummy Issues",
+        "quest_setting": "Ancient Pyramid",
+        "quest_challenge": "Medium",
+        "quest_text": "A local researcher has become so obsessed with what he discovered in the crumbling pyramid that no one has seen him for days. His distraught daughter wants you to find him",
+        "user_id": 4
+    },
+    {
+        "quest_title": "The Mausoleum of Mischief",
+        "quest_setting": "Creepy Graveyard",
+        "quest_challenge": "Easy",
+        "quest_text": "Rumors are that the long dead trickster illusionist Harkleboots has risen from his grave and is luring travelers in to see his deadly quote magic show, time to put a stop to it",
+        "user_id": 4
+    },
+    {
+        "quest_title": "Cry Wolf, Please!",
+        "quest_setting": "Quiet Village",
+        "quest_challenge": "Medium",
+        "quest_text": "After weeks of false alarms, there really may be a werewolf stalking those who walk alone at night. It is your job to find out if it is true.",
+        "user_id": 4
+    },
+    {
+        "quest_title": "The Keep of Khaos",
+        "quest_setting": "Old Castle",
+        "quest_challenge": "Hard",
+        "quest_text": "What is going on at that old keep on the hill, and why is the name spelled incorrectly",
+        "user_id": 4
+    }                           
+]

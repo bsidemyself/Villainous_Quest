@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  transition: 0.4s;
+  --black: black;
+  --red: rgb(128, 1, 1);
+  --gold: rgb(177, 166, 14);
+  --tan: rgb(179, 135, 84);
+}
+
+
+.h1 {
+  color: var(--gold);
+  size: 32px;
+  margin-bottom: 500px;
+}
+.navbar-background {
+  background-color: black;
+}
+
+.navbar-background .navbar-item,
+.btn.btn-logout {
+  color: gold;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.navbar-background .navbar-item:hover,
+.btn.btn-logout:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.btn {
+  color: var(--gold);
+  margin-top: 20px;
+  font-family: 'MedievalSharp', cursive;
+  background-color: black;
+}
+
+.btn:hover {
+  color: var(--red);
+  cursor: pointer;
+  background-color: var(--red);
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--gold);
+}
+
+body {
+  font-family: 'MedievalSharp';
+  font-size: 22px;
+  background-color: var(--red);
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-text {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 35px;
+  color: var(--gold);
+}
+
+.sub-text {
+  text-align: center;
+  padding: 15px;
+  color: var(--gold);
+}
+
+#home-bkgnd-photo {
+  background-image: url(../images/background-quest.jpg);
+  background-size: cover;
+  height: 100% ;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.login-form, .signup-form, .new-quest-form {
+  margin-top: 2%;
+  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: #ff00000c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.card h1 {
+  text-align: center;
+  color: var(--gold);
+}
+
+
+.signup-form label, .login-form label, .new-quest-form label {
+  margin-top: 10px;
+  color: var(--gold);
+}
+
+.signup-form input[type=text], .signup-form input[type=password],
+.login-form input[type=text], .login-form input[type=password] {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-form button[type=submit], .login-form button[type=submit], .new-quest-form button[type=submit]{
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.signup-form p, .login-form p {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--gold);
+}
+
+
+/* Quest Card */
+
+.quest-card {
+  display: inline-block;
+  margin: 1%;
+  padding: 20px;
+  background-color: var(--black);
+  opacity: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: 'MedievalSharp', cursive;
+  color: var(--gold);
+}
+.quest-card:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.quest-card h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+.quest-card li {
+  margin-bottom: 20px;
+}
+
+/* Quest Form */
+
+.new-quest-form {
+  margin-top: 2%;
+  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+  background-color: #0000000c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+}
+
+.new-quest-form label {
+  margin-top: 10px;
+  color: var(--gold);
+}
+
+.new-quest-form input[type=text], .new-quest-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-quest-form button[type=submit]{
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.new-quest-form button[type=submit]:hover {
+  background-color: white;
+  color: var(--red);
+}
+
+.new-quest-form textarea {
+  height: 200px;
+  width: 450px;
+}
+
+.new-quest-form button[type=submit]:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}

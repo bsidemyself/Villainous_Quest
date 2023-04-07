@@ -1,0 +1,15 @@
+{{#if isLoggedIn}}
+<h2>Welcome, {{user.username}}!</h2>
+<p>Your id is <strong>{{user.id}}</strong>.</p>
+{{/if}}
+<main>
+  <h1 class="welcome-text">Welcome to Villainous Quest</h1>
+  <h3 class="sub-text">A resource for adventure story ideas, from ready-made to fan contributions</h3>
+
+  <h3 class="sub-text">Login or create an account to view entries and add your own!</h3>
+  
+</main>
+{{#unless isLoggedIn}}
+<br />
+
+{{/unless}}
